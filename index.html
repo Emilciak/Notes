@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700;900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/87f597ed9a.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="menu">
+        <h1><i class="fa-sharp fa-regular fa-note-sticky"></i> Notes</h1>
+        <div class="menu-btns">
+            <button class="add menu-btn"><i class="fas fa-plus"></i>Add</button>
+            <button class="delete menu-btn"><i class="fas fa-trash-alt"></i>Delete All</button>
+        </div>
+    </div>
     
+    <div class="area-note">
+
+        <div class="note">
+            <div class="note-header">
+                <h3 class="note-title">Note #1</h3>
+                <button class="delete-note">
+                    <i class="fas fa-times icon"></i>
+                </button>
+            </div>
+            <div class="node-bod">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi et atque cumque, nihil enim debitis numquam perspiciatis dolor tempore quibusdam quia, maiores sed repellendus. Incidunt aliquam repellat non ipsam voluptatem.
+            </div>
+        </div>
+    </div>
+
+    <div class="node-adding">
+        <h2>Add note</h2>
+        <label for="category">Choose category</label>
+        <select id="category">
+            <option value="0" disabled selected>-- choose category --</option>
+            <option value="1">Shopping</option>
+            <option value="1">Work</option>
+            <option value="1">Other</option>
+        </select>
+
+        <label for="text"></label>
+        <textarea  id="text"></textarea>
+
+        <p class="error">Fill all forms</p>
+
+        <div class="buttons">
+            <button class="save icon"><i class="fas fa-save"></i>Save</button>
+            <button class="cancel icon"><i class="far fa-window-close"></i> Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
