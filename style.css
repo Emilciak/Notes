@@ -4,6 +4,121 @@
 	padding: 0;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+	height: 100vh;
+	font-family: "Montserrat", sans-serif;
+	background-color: #f5ebe0;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px;
+	height: 130px;
+}
+.menu h1 {
+	color: #a58978;
+}
+.menu button,
+.node-adding .save,
+.node-adding .cancel {
+	padding: 10px 25px;
+	background: none;
+	border: 1px solid #a58978;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 15px;
+	transition: background-color 0.4s;
+}
+.menu button:hover,
+.node-adding .save:hover,
+.node-adding .cancel:hover {
+	background-color: #a58978;
+}
+
+.icon {
+	margin-right: 10px;
+}
+
+.add {
+	margin-right: 25px;
+}
+
+.area-note {
+	display: flex;
+	align-items: start;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.note {
+	margin: 40px 20px;
+	width: 250px;
+	background-color: #cdb4db;
+	border: 1px solid #000000;
+}
+
+.note-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.07);
+}
+
+.note-header .delete-note {
+	background: none;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.node-body {
+	padding: 20px 15px;
+	font-size: 14px;
+}
+
+.node-adding {
+	/* display: flex; */
+    display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	width: 600px;
+	box-shadow: 0 0 10px black;
+	background-color: #d6ccc2;
+	border-radius: 10px;
+}
+
+.node-adding h2 {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+    color: #a58978;
+}
+.node-adding label{
+    margin-bottom: 10px;
+}
+
+.node-adding #text,
+.node-adding #category{
+    width: 100%;
+    max-width: 90%;
+    max-height: 600px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border:1px solid #d5bdaf;
+}
+
+.node-adding .error{
+    margin-bottom: 20px;
+    color: crimson;
+    visibility: hidden;
 }
