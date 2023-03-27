@@ -57,6 +57,7 @@ body {
 	width: 250px;
 	background-color: #cdb4db;
 	border: 1px solid #000000;
+	overflow: hidden;
 }
 
 .note-header {

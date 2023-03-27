@@ -38,7 +38,7 @@
     <div class="node-adding">
         <h2>Add note</h2>
         <label for="category">Choose category</label>
-        <select id="category">
+        <select id="category" onchange="selectValue()">
             <option value="0" disabled selected>-- choose category --</option>
             <option value="1">Shopping</option>
             <option value="1">Work</option>
@@ -46,7 +46,7 @@
         </select>
 
         <label for="text">Put your text</label>
-        <textarea  id="text"></textarea>
+        <textarea id="text"></textarea>
 
         <p class="error">Fill all forms</p>
 
