@@ -6,7 +6,7 @@
 
 body {
 	height: 100vh;
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background-color: #f5ebe0;
 }
 
@@ -81,7 +81,7 @@ body {
 
 .node-adding {
 	/* display: flex; */
-    display: none;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -99,26 +99,26 @@ body {
 .node-adding h2 {
 	margin-bottom: 20px;
 	text-transform: uppercase;
-    color: #a58978;
+	color: #a58978;
 }
-.node-adding label{
-    margin-bottom: 10px;
+.node-adding label {
+	margin-bottom: 10px;
 }
 
 .node-adding #text,
-.node-adding #category{
-    width: 100%;
-    max-width: 90%;
-    max-height: 600px;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    border:1px solid #d5bdaf;
+.node-adding #category {
+	width: 100%;
+	max-width: 90%;
+	max-height: 600px;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid #d5bdaf;
 }
 
-.node-adding .error{
-    margin-bottom: 20px;
-    color: crimson;
-    visibility: hidden;
+.node-adding .error {
+	margin-bottom: 20px;
+	color: crimson;
+	visibility: hidden;
 }
